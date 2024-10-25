@@ -1,7 +1,10 @@
-# Peer-to-Peer-Lending
+# Peer-to-Peer Lending Platform
+
+*Project Duration:* August 2024 - November 2024  
+*Supervisor:* Prof. Ashok Singh Sairam, IIT Guwahati
 
 ### Overview
-The **P2P Lending Service Portal** is an online platform designed to connect verified borrowers seeking loans with investors looking to earn higher returns on their investments. This project provides a seamless and hassle-free experience for both parties, offering lower interest rates for borrowers compared to traditional banks, and no prepayment penalties. Investors (lenders) can easily fund loans based on their investment criteria.
+The *P2P Lending Service Portal* is an online platform designed to connect verified borrowers seeking loans with investors looking to earn higher returns on their investments. This project provides a seamless and hassle-free experience for both parties, offering lower interest rates for borrowers compared to traditional banks, and no prepayment penalties. Investors (lenders) can easily fund loans based on their investment criteria.
 
 ### Features
 
