@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Peer Funding Portal</title>
+    <style>
+        /* Resetting default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Styling body */
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: url('back.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            position: relative;
+        }
+
+        /* Overlay for better readability */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+            z-index: 1;
+        }
+
+        /* Main content container styling */
+        .main-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: #fff;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        /* Large heading styling */
+        .main-heading {
+            font-size: 48px;
+            color: #ffffff;
+            font-weight: bold;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Styling the form container */
+        .container {
+            background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+            border-radius: 15px;
+            box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.4);
+            padding: 40px;
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            backdrop-filter: blur(8px);
+        }
+
+        /* Form and label styling */
+        form {
+            font-size: 18px;
+            width: 100%;
+        }
+
+        label {
+            margin: 15px 0;
+            display: block;
+            font-weight: bold;
+            font-size: 22px;
+            color: #ffffff;
+        }
+
+        /* Radio button styling */
+        input[type="radio"] {
+            margin-right: 10px;
+            accent-color: #00e676;
+            transform: scale(1.3);
+            vertical-align: middle;
+        }
+
+        /* Submit button styling */
+        input[type="submit"] {
+            background-color: #00e676;
+            color: #ffffff;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            max-width: 200px;
+            margin-top: 30px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #00c853;
+            transform: scale(1.05);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <h1 class="main-heading">Peer Funding Portal</h1>
+        <div class="container">
+            <form action="index.php" method="post">
+                <label>NEW USER OR REGISTERED USER?</label>
+                <input type="radio" id="new" name="user_type" value="new" required>
+                <label for="new">New User</label><br>
+                <input type="radio" id="registered" name="user_type" value="registered">
+                <label for="registered">Already Registered</label><br><br>
+                <input type="submit" value="Continue">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
